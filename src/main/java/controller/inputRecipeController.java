@@ -81,7 +81,7 @@ public class inputRecipeController implements Initializable {
         if (nama.getText().equals("") || ingredients.getText().equals("") 
                 || equipment.getText().equals("") || steps.getText().equals("")){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Send Donation failed");
+            alert.setTitle("Send Recipe failed");
             alert.setContentText("Columns can't be empty");
             alert.show();
             NewFXMain.setRoot("recipe");
@@ -94,8 +94,8 @@ public class inputRecipeController implements Initializable {
                         
             dao.saveResepMakanan(NewFXMain.resep);
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Donation Succes");
-            alert.setContentText("Donation has been inputed");
+            alert.setTitle("Input Succes");
+            alert.setContentText("Recipe has been inputed");
             alert.show();
             NewFXMain.setRoot("donasi");
         }
