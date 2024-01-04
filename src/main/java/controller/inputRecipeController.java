@@ -97,7 +97,7 @@ public class inputRecipeController implements Initializable {
             alert.setTitle("Input Succes");
             alert.setContentText("Recipe has been inputed");
             alert.show();
-            NewFXMain.setRoot("donasi");
+            NewFXMain.setRoot("recipe");
         }
     }
     
